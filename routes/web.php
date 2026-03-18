@@ -18,9 +18,15 @@ Route::get('/vanquang',function(){
 
 
 Route::get("/giahan","App\Http\Controllers\TenController@ten");
-<<<<<<< HEAD
 Route::get("/kimngan","App\Http\Controllers\TenController@ten2");
 =======
 Route::get("/tranchau","App\Http\Controllers\TenController@ten1");
 
->>>>>>> 39f882031bbea4df1f6408638ea6cd521da28145
+=======
+// Bài 7.3: Top 10 doanh thu cao nhất
+Route::get('/top-budget', 'App\Http\Controllers\MovieController@getTopBudget');
+
+// Bài 7.4: Phim dài hơn 120 phút
+Route::get('/long-movies', 'App\Http\Controllers\MovieController@getLongMovies');
+
+
