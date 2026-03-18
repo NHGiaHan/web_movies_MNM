@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +17,6 @@ Route::get('/vanquang',function(){
 });
 
 
-Route::get("/giahan","App\Http\Controllers\TenController@ten");
+use App\Http\Controllers\MovieController;
 
+Route::get('/phim-pho-bien', [MovieController::class, 'getPopularMovies']);
