@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/vanquang',function(){
-    return view('VanQuang');
+    return 'VanQuang';
 });
 
 
