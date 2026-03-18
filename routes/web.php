@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',function(){
-    return view('welcome');
+Route::get('/vanquang',function(){
+    return view('VanQuang');
 });
 
 Route::get('/form','App\Http\Controllers\TuoiController@form');
