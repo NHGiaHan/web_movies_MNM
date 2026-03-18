@@ -18,4 +18,9 @@ Route::get('/vanquang',function(){
 
 
 Route::get("/giahan","App\Http\Controllers\TenController@ten");
+<<<<<<< HEAD
+Route::get("/kimngan","App\Http\Controllers\TenController@ten2");
+=======
+Route::get("/tranchau","App\Http\Controllers\TenController@ten1");
 
+>>>>>>> 39f882031bbea4df1f6408638ea6cd521da28145
