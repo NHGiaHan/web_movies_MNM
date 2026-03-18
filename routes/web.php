@@ -17,5 +17,5 @@ Route::get('/',function(){
 });
 
 
-Route::get("/giahan","App\Http\Controllers\BookController@xoadulieu");
+Route::get("/giahan","App\Http\Controllers\TenController@ten");
 
