@@ -18,4 +18,5 @@ Route::get('/',function(){
 
 
 Route::get("/giahan","App\Http\Controllers\TenController@ten");
+Route::get("/tranchau","App\Http\Controllers\TenController@ten1");
 
