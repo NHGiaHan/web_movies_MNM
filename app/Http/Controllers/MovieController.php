@@ -61,7 +61,7 @@ class MovieController extends Controller
                     ->where('country_name', 'Canada')
                     ->get();
 
-        return view('movies.canada', compact('movies'));
+        return view('phim_75', compact('movies'));
     }
 
     // 7.6: Danh sách phim có thể loại là Action

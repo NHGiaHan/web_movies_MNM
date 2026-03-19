@@ -35,8 +35,11 @@ Route::get('/top-budget', 'App\Http\Controllers\MovieController@getTopBudget');
 // Bài 7.4: Phim dài hơn 120 phút
 Route::get('/long-movies', 'App\Http\Controllers\MovieController@getLongMovies');
 
+// Bài 7.5: Các bộ phim của Canada
+Route::get('/phim-canada', 'App\Http\Controllers\MovieController@getCanadaMovies');
+
 // 7.6 danh sách phim có thể loại là Action
-Route::get('/phim-hanh-dong', [MovieController::class, 'getActionMovies']);
+Route::get('/phim-hanh-dong', 'App\Http\Controllers\MovieController@getActionMovies');
 
 // 7.7 phim có điểm bình chọn trung bình > 8.0 và số lượt bình chọn > 10000
-Route::get('/phim-pho-bien', [MovieController::class, 'getPopularMovies']);
+Route::get('/phim-pho-bien', 'App\Http\Controllers\MovieController@getPopularMovies');

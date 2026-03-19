@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Phim phổ biến điểm cao</title>
+    <title>Danh sách phim Canada</title>
     <style>
         table { border-collapse: collapse; width: 100%; }
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
@@ -9,14 +9,13 @@
     </style>
 </head>
 <body>
-    <h1>DANH SÁCH PHIM PHỔ BIẾN ĐIỂM CAO</h1>
+    <h1>DANH SÁCH PHIM TẠI CANADA</h1>
     <table>
         <thead>
             <tr>
                 <th>Tên bộ phim (movie_name)</th>
                 <th>Ngày phát hành (release_date)</th>
-                <th>Mô tả (overview)</th>
-                <th>Ảnh đại diện (image_link)</th>
+                <th>Thời lượng (runtime)</th>
             </tr>
         </thead>
         <tbody>
@@ -24,10 +23,7 @@
             <tr>
                 <td>{{ $movie->movie_name }}</td>
                 <td>{{ $movie->release_date }}</td>
-                <td style="font-size: 13px;">{{ $movie->overview }}</td>
-                <td style="text-align: center;">
-                    <img src="{{ $movie->image_link }}" alt="Poster" width="100">
-                </td>
+                <td>{{ $movie->runtime }} phút</td>
             </tr>
             @endforeach
         </tbody>
