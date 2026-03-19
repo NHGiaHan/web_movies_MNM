@@ -1,4 +1,4 @@
-<h2>Danh sách phim câu 7.7</h2>
+<h2 style="text-align: center;">Danh sách phim kinh điển</h2>
 <table border="1">
     <tr>
         <th>Tên phim</th>

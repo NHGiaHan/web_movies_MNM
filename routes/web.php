@@ -19,4 +19,11 @@ Route::get('/vanquang',function(){
 
 use App\Http\Controllers\MovieController;
 
+Route::get('/the-loai', [MovieController::class, 'listGenres']);
+
+Route::get('/top-10-phim', [MovieController::class, 'topMovies']);
+
+Route::get('/phim-hanh-dong', [MovieController::class, 'getActionMovies']);
+
 Route::get('/phim-pho-bien', [MovieController::class, 'getPopularMovies']);
+
