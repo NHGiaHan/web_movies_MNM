@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+/* Bước 1: Thêm dòng này vào đầu file */
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        /* Bước 2: Thêm dòng này vào hàm boot */
+        Schema::defaultStringLength(191);
     }
 }
