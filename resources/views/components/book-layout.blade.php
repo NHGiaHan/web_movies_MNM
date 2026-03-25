@@ -24,7 +24,7 @@
                 <x-menu>
                     <x-slot name='item'>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}">Trang chủ</a>
+                            <a class="nav-link" href="{{url('sach/')}}">Trang chủ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('sach/theloai/1')}}">Tiểu thuyết</a>
