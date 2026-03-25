@@ -26,7 +26,7 @@
     </head>
      <body>
         <header style='text-align:center'>
-         <img src="{{asset('banner_sach.jpg')}}" width="1000px">
+         <img src="{{asset('images/banner_sach.jpg')}}" width="1000px">
          </header>
         <main style="width:1000px;margin:2px auto;">
              <div class='row'>
@@ -34,16 +34,21 @@
 <nav class="navbar navbar-light">
 <ul class="navbar-nav">
 <li class="nav-item active">
-<a class="nav-link" href="">Trang chủ</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="">Tiểu thuyết</a>
-</li>
-. . . .
+                            <a class="nav-link" href="{{url('sach')}}">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/1')}}">Tiểu thuyết</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/2')}}">Truyện ngắn - Tản văn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/3')}}">Tác phẩm kinh điển</a>
+                        </li>
 </ul>
 </nav>
-<img src="{{asset('sidebar_1.jpg')}}"width="100%"class='mt-1'>
-<img src="{{asset('sidebar_2.jpg')}}"width="100%"class='mt-1'>
+<img src="{{asset('images/sidebar_1.jpg')}}"width="100%"class='mt-1'>
+<img src="{{asset('images/sidebar_2.jpg')}}"width="100%"class='mt-1'>
 </div>
 <div class='col-9'>
 {{$slot}}
