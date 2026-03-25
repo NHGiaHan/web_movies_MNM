@@ -34,12 +34,17 @@
 <nav class="navbar navbar-light">
 <ul class="navbar-nav">
 <li class="nav-item active">
-<a class="nav-link" href="">Trang chủ</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="">Tiểu thuyết</a>
-</li>
-. . . .
+                            <a class="nav-link" href="{{url('sach')}}">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/1')}}">Tiểu thuyết</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/2')}}">Truyện ngắn - Tản văn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('sach/theloai/3')}}">Tác phẩm kinh điển</a>
+                        </li>
 </ul>
 </nav>
 <img src="{{asset('images/sidebar_1.jpg')}}"width="100%"class='mt-1'>

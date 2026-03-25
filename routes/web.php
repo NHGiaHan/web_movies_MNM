@@ -47,3 +47,8 @@ Route::get('/phim-hanh-dong', 'App\Http\Controllers\MovieController@getActionMov
 Route::get('/phim-pho-bien', 'App\Http\Controllers\MovieController@getPopularMovies');
 
 Route::get('sach/chitiet/{id}','App\Http\Controllers\BookController@chitiet');
+// Route hiển thị mặc định (Trang chủ sách)
+Route::get('/sach', 'App\Http\Controllers\LayoutController@sach');
+
+// Route hiển thị theo thể loại
+Route::get('/sach/theloai/{id}', 'App\Http\Controllers\LayoutController@theloai');
