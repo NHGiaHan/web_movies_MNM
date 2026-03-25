@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
-
+use App\Http\Controllers\BookController;
 
 use Illuminate\Support\Facades\DB;
 /*
@@ -45,3 +45,5 @@ Route::get('/phim-hanh-dong', 'App\Http\Controllers\MovieController@getActionMov
 
 // 7.7 phim có điểm bình chọn trung bình > 8.0 và số lượt bình chọn > 10000
 Route::get('/phim-pho-bien', 'App\Http\Controllers\MovieController@getPopularMovies');
+
+Route::get('sach/chitiet/{id}','App\Http\Controllers\BookController@chitiet');
