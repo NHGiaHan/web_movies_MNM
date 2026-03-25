@@ -1,21 +1,30 @@
 <x-book-layout>
-    <x-slot name="title">
-        Chi tiết: {{ $data->tieu_de }}
-    </x-slot>
+    <x-slot name="title">Chi tiết</x-slot>
 
-    <h4 class="text-danger">{{ $data->tieu_de }}</h4>
-    <div style="display: grid; grid-template-columns: 30% 70%; gap: 20px;">
+    <style>
+        .info {
+            display: grid;
+            grid-template-columns: repeat(2, 30% 70%);
+        }
+    </style>
+
+    <h4>{{$data->tieu_de}}</h4>
+    <div class='info'>
         <div>
-            <img src="{{ asset('hinh/image/'.$data->file_anh_bia) }}" width="200px">
+            <img src="{{asset('hinh/image/'.$data->file_anh_bia)}}" width="200px" height="200px">
         </div>
         <div>
-            Nhà cung cấp: <b>{{ $data->nha_cung_cap }}</b><br>
-            Tác giả: <b>{{ $data->tac_gia }}</b><br>
-            <button class="btn btn-danger mt-3">Thêm vào giỏ hàng</button>
+            Nhà cung cấp: <b>{{$data->nha_cung_cap}}</b><br>
+            Nhà xuất bản: <b>{{$data->nha_xuat_ban}}</b><br>
+            Tác giả: <b>{{$data->tac_gia}}</b><br>
+            Hình thức bìa: <b>{{$data->hinh_thuc_bia}}</b><br>
         </div>
     </div>
-    <div class="mt-4">
-        <b>Mô tả:</b> <br>
-        {{ $data->mo_ta }}
+
+    <div class='row'>
+        <div class='col-sm-12'>
+            <b>Mô tả:</b><br>
+            {{$data->mo_ta}}
+        </div>
     </div>
 </x-book-layout>
