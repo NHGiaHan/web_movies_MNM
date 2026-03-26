@@ -1,6 +1,8 @@
 <x-book-layout>
 
-<x-slot name="title">Trang chủ</x-slot>
+<x-slot name="title">
+    Trang chủ
+</x-slot>
 <div class='list-book'>
     @foreach($data as $row)
         <div class='book'>

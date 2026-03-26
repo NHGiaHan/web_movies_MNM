@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
          <head>
-         <title>{{$title}}</title>
+         <title>{{ $title ?? 'Nhà Sách' }}</title>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
         .navbar {
@@ -51,7 +51,7 @@
 <img src="{{asset('images/sidebar_2.jpg')}}"width="100%"class='mt-1'>
 </div>
 <div class='col-9'>
-{{$slot}}
+{{ $slot ?? '' }}
 </div>
 </div>
 </main>
