@@ -4,7 +4,7 @@
     <style>
         .info {
             display: grid;
-            grid-template-columns: repeat(2, 30% 70%);
+            grid-template-columns: repeat(2, 40% 70%);
         }
     </style>
 
