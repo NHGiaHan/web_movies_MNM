@@ -4,16 +4,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\MovieController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/vanquang', function () {
     return 'VanQuang';
@@ -43,3 +33,8 @@ Route::get('/phim-hanh-dong', 'App\Http\Controllers\MovieController@getActionMov
 
 // 7.7 phim có điểm bình chọn trung bình > 8.0 và số lượt bình chọn > 10000
 Route::get('/phim-pho-bien', 'App\Http\Controllers\MovieController@getPopularMovies');
+
+
+Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
+Route::get('/sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
+Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
